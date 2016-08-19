@@ -19,9 +19,9 @@ class Levenshtein {
       for (let j = 0; j < str2.length; j++) {
         curCell = str1[i] === str2[j] ?
           diagCell : Math.min(...[diagCell, prevRow[j + 1], leftCell]) + 1;
-        diagCell = prevRow[j];
-        leftCell = curCell;
+        diagCell = prevRow[j + 1];
         prevRow[j] = leftCell;
+        leftCell = curCell;
       }
       prevRow[prevRow.length - 1] = curCell;
     }
