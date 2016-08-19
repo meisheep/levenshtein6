@@ -29,10 +29,10 @@ class Levenshtein {
   }
 
   get() {
-    return this.calc(this.str1, this.str2);
+    return this.calc();
   }
 
-  static get(str1, str2) {
+  static get(str1 = '', str2 = '') {
     return (new Levenshtein(str1, str2)).get();
   }
 }
