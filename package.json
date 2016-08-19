@@ -11,7 +11,9 @@
     "url": "git+https://github.com/meisheep/levenshtein6.git"
   },
   "keywords": [
-    "levenshtein"
+    "levenshtein",
+    "distance",
+    "es6"
   ],
   "author": "meisheep",
   "license": "MIT",
