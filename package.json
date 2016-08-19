@@ -1,6 +1,6 @@
 {
   "name": "levenshtein6",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Levenshtein algorithm implementation written in ES6",
   "main": "Levenshtein.js",
   "scripts": {
@@ -24,5 +24,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
