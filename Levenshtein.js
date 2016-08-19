@@ -37,4 +37,4 @@ class Levenshtein {
   }
 }
 
-export default Levenshtein;
+module.exports = Levenshtein;
