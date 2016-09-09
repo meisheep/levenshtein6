@@ -4,7 +4,7 @@ class Levenshtein {
     this.str2 = str2;
   }
 
-  calc(str1 = this.str1, str2 = this.str2) {
+  static calc(str1, str2) {
     if (str1 === str2) return 0;
     if (!str1.length) return str2.length;
     if (!str2.length) return str1.length;
@@ -28,12 +28,12 @@ class Levenshtein {
     return curCell;
   }
 
-  get() {
-    return this.calc();
+  get(str1 = this.str1, str2 = this.str2) {
+    return Levenshtein.calc(str1, str2);
   }
 
   static get(str1 = '', str2 = '') {
-    return (new Levenshtein(str1, str2)).get();
+    return this.calc(str1, str2);
   }
 }
 
