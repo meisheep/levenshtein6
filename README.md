@@ -11,11 +11,12 @@ npm install levenshtein6
 const Levenshtein = require('levenshtein6');
 const l = new Levenshtein('kit', 'cat');
 l.get();  // 2
+l.get('same', 'same'); // 0
 ```
-or just
+or use static method
 ```
-const levenshtein = require('levenshtein6');
-levenshtein.get('我愛你', '我愛我恨你'); // 2
+const Levenshtein = require('levenshtein6');
+Levenshtein.get('我愛你', '我愛我恨你'); // 2
 ```
 
 # Testing
